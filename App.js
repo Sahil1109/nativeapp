@@ -4,12 +4,8 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.boldText}>Hello world</Text>
-      </View>
-      <View style={styles.body}>
-        <Text>Hello again</Text>
-      </View>
+      <Text></Text>
+      <Text></Text>
     </View>
   );
 }
