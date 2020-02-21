@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import { StyleSheet, View, FlatList, Text,} from 'react-native';
+import { StyleSheet, View, FlatList, Text, Alert,} from 'react-native';
 import Header from './components/header'
 import TodoItem from './components/todoItem'
 import AddTodo from './components/addTodo'
@@ -18,12 +18,20 @@ export default function App() {
   }
 
   const submitHandler = (text)=>{
+    if(text.length>3){
     setTodos((prevTodo)=>{
       return [
         {text: text, key:Math.random().toString()},
         ...prevTodo
       ];
     })
+    }
+    else{
+      Alert.alert('OOPS!!','Text length is very small',[
+        {text: 'OK',onPress: ()=> console.log('alert closed')}
+      ]);
+    }
+  
   }
 
   return (
