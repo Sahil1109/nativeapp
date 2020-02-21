@@ -3,9 +3,6 @@ import { StyleSheet, View, Text, TouchableOpacity} from 'react-native';
 
 export default function TodoItem({item, pressHandler}){
 
-    const touchHandler =()=>{
-        
-    }
     return(
        <TouchableOpacity onPress={()=>pressHandler(item.key)}>
            <Text style={styles.item}>{item.text}</Text>
