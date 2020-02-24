@@ -5,6 +5,7 @@ import Home from './screens/home';
 import About from './screens/about';
 import ReviewDetails from './screens/reviewDetails';
 import { View } from 'react-native';
+import Navigator from './routes/homeStack'
 
 const getFonts =()=> Font.loadAsync({
     'nunito-regular' : require('./assets/fonts/Nunito-Regular.ttf'),
@@ -16,12 +17,7 @@ export default function App() {
 
   if(fontsLoaded){
     return(
-      <View>
-        <Home />
-        <About/>
-        <ReviewDetails></ReviewDetails>
-      </View>
-      
+    <Navigator/>
    );
   }
   else{
