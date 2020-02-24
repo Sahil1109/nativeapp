@@ -4,20 +4,24 @@ import {AppLoading} from 'expo'
 import Home from './screens/home';
 import About from './screens/about';
 import ReviewDetails from './screens/reviewDetails';
+import { View } from 'react-native';
 
 const getFonts =()=> Font.loadAsync({
     'nunito-regular' : require('./assets/fonts/Nunito-Regular.ttf'),
     'nunito-bold': require('./assets/fonts/Nunito-Bold.ttf')
   })
 
-
-
 export default function App() {
   const [fontsLoaded, setFontsLoaded]=useState(false);
 
   if(fontsLoaded){
     return(
-      <Home />
+      <View>
+        <Home />
+        <About/>
+        <ReviewDetails></ReviewDetails>
+      </View>
+      
    );
   }
   else{
