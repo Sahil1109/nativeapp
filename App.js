@@ -5,7 +5,7 @@ import Home from './screens/home';
 import About from './screens/about';
 import ReviewDetails from './screens/reviewDetails';
 import { View } from 'react-native';
-import Navigator from './routes/homeStack'
+import Navigator from './routes/draw'
 
 const getFonts =()=> Font.loadAsync({
     'nunito-regular' : require('./assets/fonts/Nunito-Regular.ttf'),
