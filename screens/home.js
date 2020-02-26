@@ -4,7 +4,8 @@ import { StyleSheet, View, Text, TouchableOpacity, FlatList, Modal,
 import { globalStyles } from '../styles/global';
 import { MaterialIcons } from '@expo/vector-icons';
 import Card from '../shared/card';
-import ReviewForm from './reviewForm';
+import ReviewForm from './reviewForm'
+
 
 export default function Home({ navigation }) {
   const [modalOpen, setModalOpen] = useState(false);
@@ -64,9 +65,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 10,
     borderWidth: 1,
-    borderColor: '#f2f2f2',
+    borderColor: 'rgb(49,0,72)',
     padding: 10,
-    borderRadius: 10,
+    borderRadius: 15,
     alignSelf: 'center',
   },
   modalClose: {
