@@ -2,7 +2,7 @@ import React from 'react'
 import {StyleSheet, View, Text} from 'react-native'
 
 export default function Card(props){
-    console.log(props.text)
+    
     return(
         <View style={styles.card}>
             <View style={styles.cardContent}>
